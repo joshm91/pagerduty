@@ -10,4 +10,4 @@ inputs:
 - name: pagerduty
 
 run:
-  path: ./pagerduty/ci/test.sh
+  path: ./pagerduty/ci/build.sh
