@@ -14,3 +14,5 @@ jobs:
     file: pagerduty/ci/test.yml
   - task: build
     file: pagerduty/ci/build.yml
+  - task: upload
+    file: pagerduty/ci/upload.yml
