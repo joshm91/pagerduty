@@ -1,0 +1,16 @@
+resources:
+- name: pagerduty
+  type: git
+  source:
+    uri: https://github.com/joshm91/pagerduty
+    branch: master
+
+jobs:
+- name: test-app
+  plan:
+  - get: pagerduty
+    trigger: true
+  - task: tests
+    file: pagerduty/ci/test.yml
+  - task: build
+    file: pagerduty/ci/build.yml
