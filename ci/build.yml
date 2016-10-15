@@ -9,5 +9,8 @@ image_resource:
 inputs:
 - name: pagerduty
 
+outputs:
+- name: gem
+
 run:
   path: ./pagerduty/ci/build.sh
