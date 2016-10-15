@@ -3,5 +3,5 @@
 set -e -x
 
 pushd pagerduty
-  bundle build pagerduty.gemspec
+  gem build pagerduty.gemspec
 popd
