@@ -3,6 +3,5 @@
 set -e -x
 
 pushd pagerduty
-  bundle install
-  bundle exec rspec
+  bundle build pagerduty.gemspec
 popd
